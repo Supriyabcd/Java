@@ -27,12 +27,12 @@ class NewStudent extends Student{
 public class MemoryDemo{
     public static void run() {
 
-        Student s1 = new Student("Supriya", 20);
+        Student s1 = new Student("ABC", 20);
         s1.introduce();
         //stack: reference s1
         //heap: Student object 
 
-        NewStudent s2 = new NewStudent("Suprabha", 25);
+        NewStudent s2 = new NewStudent("Mona Lisa", 25);
         s2.introduce();
         //stack: reference s2
         //heap: NewStudent object

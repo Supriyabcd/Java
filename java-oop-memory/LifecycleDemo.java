@@ -13,7 +13,7 @@ class Employee{
 
 public class LifecycleDemo{
     public static void run() {
-        Employee e1 = new Employee("Supriya");
+        Employee e1 = new Employee("ABC");
         e1.destroy();
         System.out.println("End of program");
     }

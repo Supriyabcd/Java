@@ -13,7 +13,7 @@ class SchoolStudent{
 }
 public class StaticVsInstance{
     public static void run() {
-        SchoolStudent s1 = new SchoolStudent("Supriya");
+        SchoolStudent s1 = new SchoolStudent("ABC");
         SchoolStudent s2 = new SchoolStudent("Mona Lisa");
 
         s1.display();
