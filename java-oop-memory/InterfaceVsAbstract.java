@@ -24,7 +24,7 @@ class Sparrow extends Bird implements Flyable{
     }
 }
 public class InterfaceVsAbstract{
-    public static void main(String[] args) {
+    public static void run() {
         Sparrow s = new Sparrow();
 
         s.makeSound();

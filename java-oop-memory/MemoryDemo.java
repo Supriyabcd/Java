@@ -25,7 +25,7 @@ class NewStudent extends Student{
     }
 }
 public class MemoryDemo{
-    public static void main(String[] args) {
+    public static void run() {
 
         Student s1 = new Student("Supriya", 20);
         s1.introduce();

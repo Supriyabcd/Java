@@ -1,8 +1,8 @@
-class Student{
+class SchoolStudent{
     static String school = "ABC Vidyalaya";
     String name;
 
-    Student(String name){
+    SchoolStudent(String name){
         this.name = name;
     }
 
@@ -12,9 +12,9 @@ class Student{
 
 }
 public class StaticVsInstance{
-    public static void main(String[] args) {
-        Student s1 = new Student("Supriya");
-        Student s2 = new Student("Mona Lisa");
+    public static void run() {
+        SchoolStudent s1 = new SchoolStudent("Supriya");
+        SchoolStudent s2 = new SchoolStudent("Mona Lisa");
 
         s1.display();
         s2.display();

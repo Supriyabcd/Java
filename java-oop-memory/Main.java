@@ -1,41 +1,26 @@
-// import java.util.Scanner;
 
-class Student{
-    String name;
-    int age;
-
-    Student(String n, int a){
-        name = n;
-        age = a;
-    }
-
-    void introduce(){
-        System.out.println("My name is " + name);
-        System.out.println("I am " + age + " years old");
-    }
-}
-
-class NewStudent extends Student{
-    NewStudent(String n, int a){
-        super(n, a);
-    }
-
-    @Override
-    void introduce(){
-        System.out.println("Hello everyone!");
-        super.introduce();
-    }
-}
 public class Main{
     public static void main(String[] args) {
+        System.out.println("=== Inheritance ===");
+        InheritanceDemo.run();
 
-        Student s1 = new Student("Supriya", 20);
-        s1.introduce();
+        System.out.println("\n=== Polymorphism ===");
+        PolymorphismDemo.run();
 
-        NewStudent s2 = new NewStudent("Suprabha", 25);
-        s2.introduce();
+        System.out.println("\n=== Interface vs Abstract ===");
+        InterfaceVsAbstract.run();
+
+        System.out.println("\n=== Static vs Instance ===");
+        StaticVsInstance.run();
+
+        System.out.println("\n=== Heap vs Stack ===");
+        MemoryDemo.run();
+
+        System.out.println("\n=== Object Lifecycle ===");
+        LifecycleDemo.run();
     }
 }
+
         /*Loop */
         // int sum = 0;
         // for(int i = 10; i >= 1; i--){
@@ -86,4 +71,43 @@ public class Main{
     //     System.out.println( is_even ? x + " is even" : x + " is odd") ;
 
     //     scanner.close();
-    // }
+    // }\
+
+// import java.util.Scanner;
+
+// class Student{
+//     String name;
+//     int age;
+
+//     Student(String n, int a){
+//         name = n;
+//         age = a;
+//     }
+
+//     void introduce(){
+//         System.out.println("My name is " + name);
+//         System.out.println("I am " + age + " years old");
+//     }
+// }
+
+// class NewStudent extends Student{
+//     NewStudent(String n, int a){
+//         super(n, a);
+//     }
+
+//     @Override
+//     void introduce(){
+//         System.out.println("Hello everyone!");
+//         super.introduce();
+//     }
+// }
+/*
+public static void main(String[] args) {
+
+        Student s1 = new Student("Supriya", 20);
+        s1.introduce();
+
+        NewStudent s2 = new NewStudent("Suprabha", 25);
+        s2.introduce();
+    }
+*/

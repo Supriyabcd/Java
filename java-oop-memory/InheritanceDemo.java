@@ -1,4 +1,4 @@
-class Animal{
+class InheritanceAnimal{
     void eat(){
         System.out.println("Ate food");
     }
@@ -8,14 +8,14 @@ class Animal{
     }
 }
 
-class Dog extends Animal{
+class InheritanceDog extends InheritanceAnimal{
     void bark(){
         System.out.println("Barks");
     }
 }
 public class InheritanceDemo{
-    public static void main(String[] args) {
-        Dog d1 = new Dog();
+    public static void run() {
+        InheritanceDog d1 = new InheritanceDog();
 
         d1.eat();
         d1.sound();

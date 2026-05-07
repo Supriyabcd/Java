@@ -22,17 +22,17 @@ class Cat extends Animal{
     }
 }
 
-class Bird extends Animal{
+class PolymorphismBird extends Animal{
     @Override
     void sound(){
         System.out.println("Sings");
     }
 }
 public class PolymorphismDemo {
-    public static void main(String[] args) {
+    public static void run() {
         Dog d = new Dog();
         Cat c = new Cat();
-        Bird b = new Bird();
+        PolymorphismBird b = new PolymorphismBird();
 
         d.sound();
         c.sound();
